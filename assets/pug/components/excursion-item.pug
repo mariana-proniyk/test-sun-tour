@@ -1,0 +1,13 @@
+mixin ExcursionItem(srcImg, title, text, price, discount)
+    .excursion-item 
+        img(src=srcImg, alt="")
+        .body 
+            div
+                a(href="#") 
+                    h2=title
+                p=text
+            .cost
+                .price=price
+                if discount
+                    .discount=discount
+                

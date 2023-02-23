@@ -1,1 +1,11 @@
-header header will be here
+.header-wrapper
+    header.content-center
+        .logo-wrapper
+            a.logo(href="/") 
+                img(src="./public/images/logo.svg", alt="")
+            .text Мережа турагенств
+                span «Сонце в колі»
+        .phone 
+            a(href="tel: 044 123-45-67") 044 123-45-67
+            span зворотний дзвінок
+        +Social()
