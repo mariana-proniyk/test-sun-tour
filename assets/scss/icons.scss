@@ -1,0 +1,44 @@
+$icons-font: "icons";
+
+@font-face {
+    font-family: $icons-font;
+    src: url("../../public/fonts/icons/icons.ttf?632aea9459a4169161730d6442845ce7") format("truetype"),
+url("../../public/fonts/icons/icons.woff?632aea9459a4169161730d6442845ce7") format("woff"),
+url("../../public/fonts/icons/icons.woff2?632aea9459a4169161730d6442845ce7") format("woff2"),
+url("../../public/fonts/icons/icons.svg?632aea9459a4169161730d6442845ce7#icons") format("svg");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$icons-map: (
+    "active-star": "\f101",
+    "arrow-bottom": "\f102",
+    "facebook": "\f103",
+    "star": "\f104",
+    "telegram": "\f105",
+);
+
+.icon-active-star:before {
+    content: map-get($icons-map, "active-star");
+}
+.icon-arrow-bottom:before {
+    content: map-get($icons-map, "arrow-bottom");
+}
+.icon-facebook:before {
+    content: map-get($icons-map, "facebook");
+}
+.icon-star:before {
+    content: map-get($icons-map, "star");
+}
+.icon-telegram:before {
+    content: map-get($icons-map, "telegram");
+}
